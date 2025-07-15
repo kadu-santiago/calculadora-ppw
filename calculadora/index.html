@@ -3,42 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculadora do Zero</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="calculator-container">
-        <div class="calculator-display">
-            <div class="previous-operand"></div>
-            <div class="current-operand">0</div>
-        </div>
+    <div class="calculadora">
+        <div id="display" class="display">0</div>
 
-        <div class="calculator-buttons">
-            <button class="operator AC">AC</button>
-            <button class="operator apaga"><</button>
-            <button class="operator divisao">÷</button>
-            <button class="operator multiplicacao">×</button>
-            <button class="sete">7</button>
-            <button class="oito">8</button>
-            <button class="nove">9</button>
-
-            <button class="operator mais">+</button>
-
-            <button class="quatro">4</button>
-            <button class="cinco ">5</button>
-            <button class="seis">6</button>
-            <button class="operator menos">−</button>
-
-            <button class="um">1</button>
-            <button class="dois">2</button>
-            <button class="tres">3</button>
-<button class="operator igual">=</button>
-            <button class="zero">0</button>
-            <button class="virgula">,</button>
+        <div class="botoes">
+            <button class="botao op" data-area="c">C</button>
+            <button class="botao op" data-area="apagar"><</button>
+            <button class="botao op" data-area="dividir">÷</button>
+            <button class="botao op" data-area="multiplicar">×</button>
+            <button class="botao op" data-area="subtrair">−</button>
+            <button class="botao op" data-area="somar">+</button>
+            <button class="botao op-igual" data-area="igual">=</button>
+            <button class="botao" data-area="sete">7</button>
+            <button class="botao" data-area="oito">8</button>
+            <button class="botao" data-area="nove">9</button>
+            <button class="botao" data-area="quatro">4</button>
+            <button class="botao" data-area="cinco">5</button>
+            <button class="botao" data-area="seis">6</button>
+            <button class="botao" data-area="um">1</button>
+            <button class="botao" data-area="dois">2</button>
+            <button class="botao" data-area="tres">3</button>
+            <button class="botao" data-area="zero">0</button>
+            <button class="botao" data-area="ponto">.</button>
         </div>
     </div>
+
+    <script src="script.js" defer></script>
 
 </body>
 </html>
